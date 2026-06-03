@@ -7,6 +7,7 @@ venue: "State Key Laboratory of Surveying, Mapping and Remote Sensing Informatio
 date: 2025-09-01
 location: "Wuhan, China"
 logo: "institutions/wuhan_university.png"
+logo_theme: "dark"
 excerpt: "Graduate study in communication engineering at Wuhan University, followed by a voluntary withdrawal due to a research-field mismatch."
 ---
 

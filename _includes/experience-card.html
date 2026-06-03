@@ -1,11 +1,13 @@
 {% include base_path %}
 
 <article class="experience-card">
-  {% if post.logo %}
-    <a class="experience-card__logo" href="{{ base_path }}{{ post.url }}" aria-label="{{ post.venue }}">
+  <a class="experience-card__logo{% if post.logo_theme %} experience-card__logo--{{ post.logo_theme }}{% endif %}" href="{{ base_path }}{{ post.url }}" aria-label="{{ post.venue }}">
+    {% if post.logo %}
       <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.venue }} logo" loading="lazy">
-    </a>
-  {% endif %}
+    {% else %}
+      <span class="experience-card__logo-placeholder">{{ post.venue }}</span>
+    {% endif %}
+  </a>
 
   <div class="experience-card__body">
     <h2 class="experience-card__title">
