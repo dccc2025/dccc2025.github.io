@@ -113,6 +113,10 @@
   object-fit: contain;
 }
 
+.experience-card__logo-img--cover {
+  object-fit: cover;
+}
+
 .experience-card__logo-placeholder {
   color: var(--global-text-color);
   font-size: $type-size-6;

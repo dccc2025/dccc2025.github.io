@@ -3,7 +3,7 @@
 <article class="experience-card">
   <a class="experience-card__logo{% if post.logo_theme %} experience-card__logo--{{ post.logo_theme }}{% endif %}" href="{{ base_path }}{{ post.url }}" aria-label="{{ post.venue }}">
     {% if post.logo %}
-      <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.venue }} logo" loading="lazy">
+      <img class="{% if post.logo_fit %}experience-card__logo-img--{{ post.logo_fit }}{% endif %}" src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.venue }} logo" loading="lazy">
     {% else %}
       <span class="experience-card__logo-placeholder">{{ post.venue }}</span>
     {% endif %}

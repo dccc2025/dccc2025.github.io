@@ -7,6 +7,7 @@ venue: "School of Communication Engineering, Jilin University"
 date: 2021-09-01
 location: "Changchun, China"
 logo: "institutions/jilin_university.png"
+logo_fit: "cover"
 excerpt: "Undergraduate study in communication engineering at Jilin University."
 ---
 
