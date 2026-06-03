@@ -14,10 +14,11 @@ Most machine vision systems still see the world through proxies. RGB records how
 
 HADAR, short for heat-assisted detection and ranging, points to a different route: sensing the world through thermal radiation and recovering physical attributes from it. The original HADAR work, led by my advisor Fanglin Bao and published in *Nature* in 2023, formulated ground-based thermal perception using a radiative-transfer view of the scene. For an observed pixel or object element \(\alpha\), the measured thermal spectrum can be written conceptually as
 
-```text
-S_alpha = e_alpha B(T_alpha)
-        + (1 - e_alpha) sum_{beta != alpha} S_beta V_{alpha beta}.
-```
+$$
+S_{\alpha}
+= e_{\alpha} B(T_{\alpha})
++ (1 - e_{\alpha}) \sum_{\beta \ne \alpha} S_{\beta} V_{\alpha\beta}.
+$$
 
 The first term is self-emission: an object radiates according to its temperature \(T\), emissivity \(e\), and Planck's blackbody law \(B(T)\). The second term is reflected environmental thermal radiation: each surface also reflects heat from the surrounding scene. In other words, a thermal hyperspectral image is not merely a blurry temperature map. It is a mixture of temperature, material response, geometry, and environmental illumination.
 

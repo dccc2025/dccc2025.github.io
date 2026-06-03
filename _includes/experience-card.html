@@ -14,7 +14,7 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
     </h2>
     <p class="experience-card__meta">
-      {{ post.type }} &middot; {{ post.venue }} &middot; {{ post.location }} &middot; {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      {{ post.type }} &middot; {% if post.venue_link %}<a href="{{ post.venue_link }}">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %} &middot; {{ post.location }} &middot; {{ post.date | default: "1900-01-01" | date: "%Y" }}
     </p>
     {% if post.excerpt %}
       <p class="experience-card__excerpt">{{ post.excerpt }}</p>

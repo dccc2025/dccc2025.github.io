@@ -256,6 +256,11 @@ body:hover .visually-hidden button {
     color: $mastodon-color;
   }
 
+  .fa-weixin,
+  .fa-wechat {
+    color: $wechat-color;
+  }
+
   .ai-orcid,
   .ai-orcid-square {
     color: $orcid-color;
