@@ -6,6 +6,7 @@ permalink: /experience/2025-2026-westlake-university
 venue: "School of Science, Westlake University"
 date: 2025-09-02
 location: "Hangzhou, China"
+logo: "institutions/westlake_university.png"
 excerpt: "Research assistant in Fanglin Bao Laboratory, leading AI-side efforts for HADAR algorithms and lightweight deployment."
 ---
 

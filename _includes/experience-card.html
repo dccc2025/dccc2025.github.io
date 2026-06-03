@@ -1,0 +1,21 @@
+{% include base_path %}
+
+<article class="experience-card">
+  {% if post.logo %}
+    <a class="experience-card__logo" href="{{ base_path }}{{ post.url }}" aria-label="{{ post.venue }}">
+      <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.venue }} logo" loading="lazy">
+    </a>
+  {% endif %}
+
+  <div class="experience-card__body">
+    <h2 class="experience-card__title">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+    <p class="experience-card__meta">
+      {{ post.type }} &middot; {{ post.venue }} &middot; {{ post.location }} &middot; {{ post.date | default: "1900-01-01" | date: "%Y" }}
+    </p>
+    {% if post.excerpt %}
+      <p class="experience-card__excerpt">{{ post.excerpt }}</p>
+    {% endif %}
+  </div>
+</article>

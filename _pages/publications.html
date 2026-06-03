@@ -33,13 +33,12 @@ Long term, I hope to develop efficient thermal perception systems that can run w
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include publication-list-item.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include publication-list-item.html %}
   {% endfor %}
 {% endif %}
-
 

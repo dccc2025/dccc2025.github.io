@@ -1,0 +1,35 @@
+{% include base_path %}
+
+{% assign title = post.title %}
+{% assign authors = post.authors | default: post.citation %}
+{% assign authors = authors | replace: 'Cheng Dai', '<strong>Cheng Dai</strong>' %}
+
+<div class="publication-item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <h2 class="archive__item-title publication-item__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+
+    {% if authors %}
+      <p class="publication-item__authors">{{ authors }}</p>
+    {% endif %}
+
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt publication-item__excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% endif %}
+
+    <p class="publication-item__links">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">Paper</a>
+      {% endif %}
+      {% if post.bibtexurl %}
+        {% if post.paperurl %}<span>/</span>{% endif %}
+        <a href="{{ post.bibtexurl }}">BibTeX</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        {% if post.paperurl or post.bibtexurl %}<span>/</span>{% endif %}
+        <a href="{{ post.slidesurl }}">Slides</a>
+      {% endif %}
+    </p>
+  </article>
+</div>
