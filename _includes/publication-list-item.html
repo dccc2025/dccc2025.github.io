@@ -22,12 +22,24 @@
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}">Paper</a>
       {% endif %}
-      {% if post.bibtexurl %}
+      {% if post.githuburl %}
         {% if post.paperurl %}<span>/</span>{% endif %}
+        <a href="{{ post.githuburl }}">GitHub</a>
+      {% endif %}
+      {% if post.dataseturl %}
+        {% if post.paperurl or post.githuburl %}<span>/</span>{% endif %}
+        <a href="{{ post.dataseturl }}">Dataset</a>
+      {% endif %}
+      {% if post.modelurl %}
+        {% if post.paperurl or post.githuburl or post.dataseturl %}<span>/</span>{% endif %}
+        <a href="{{ post.modelurl }}">Model Weights</a>
+      {% endif %}
+      {% if post.bibtexurl %}
+        {% if post.paperurl or post.githuburl or post.dataseturl or post.modelurl %}<span>/</span>{% endif %}
         <a href="{{ post.bibtexurl }}">BibTeX</a>
       {% endif %}
       {% if post.slidesurl %}
-        {% if post.paperurl or post.bibtexurl %}<span>/</span>{% endif %}
+        {% if post.paperurl or post.githuburl or post.dataseturl or post.modelurl or post.bibtexurl %}<span>/</span>{% endif %}
         <a href="{{ post.slidesurl }}">Slides</a>
       {% endif %}
     </p>

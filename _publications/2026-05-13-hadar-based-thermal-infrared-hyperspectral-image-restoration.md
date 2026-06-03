@@ -8,6 +8,7 @@ date: 2026-05-13
 venue: "arXiv"
 authors: "Cheng Dai, Jiale Lin, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao"
 paperurl: "https://arxiv.org/abs/2605.13664"
+githuburl: "https://github.com/jialelin2007/HAIR"
 citation: "Cheng Dai, Jiale Lin, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao. (2026). &quot;HADAR-Based Thermal Infrared Hyperspectral Image Restoration.&quot; <i>arXiv preprint arXiv:2605.13664</i>."
 ---
 
@@ -17,4 +18,4 @@ The method models thermal hyperspectral radiance using physically meaningful tem
 
 The paper evaluates HAIR on outdoor DARPA Invisible Headlights data and in-lab FTIR measurements, showing improved objective accuracy, visual quality, and physical consistency compared with prior restoration methods.
 
-Links: [arXiv abstract](https://arxiv.org/abs/2605.13664) | [HTML version](https://arxiv.org/html/2605.13664v1) | [PDF](https://arxiv.org/pdf/2605.13664)
+Links: [arXiv abstract](https://arxiv.org/abs/2605.13664) | [HTML version](https://arxiv.org/html/2605.13664v1) | [PDF](https://arxiv.org/pdf/2605.13664) | [GitHub](https://github.com/jialelin2007/HAIR)
