@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Cheng Dai's Homepage"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Cheng Dai"
 description              : &description "Cheng Dai's homepage"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -184,6 +184,11 @@ exclude:
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
+  - latex_cv/*.aux
+  - latex_cv/*.fdb_latexmk
+  - latex_cv/*.fls
+  - latex_cv/*.log
+  - latex_cv/*.out
   - LICENSE
   - local
   - log

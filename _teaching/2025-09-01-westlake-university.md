@@ -7,10 +7,10 @@ venue: "AI for Physics Lab, Westlake University"
 date: 2025-09-02
 location: "Hangzhou, China"
 logo: "institutions/westlake_university.png"
-excerpt: "Research assistant in the AI for Physics Lab, advised by Fanglin Bao and Xin Yuan, leading AI-side efforts for HADAR algorithms and lightweight deployment."
+excerpt: "Research assistant in the AI for Physics Lab, advised by Xin Yuan and Fanglin Bao, leading AI-side efforts for HADAR algorithms and lightweight deployment."
 ---
 
-From 2025 to 2026, I worked as a Research Assistant in the AI for Physics Lab at Westlake University, advised by Fanglin Bao and Xin Yuan.
+From 2025 to 2026, I worked as a Research Assistant in the AI for Physics Lab at Westlake University, advised by Xin Yuan and Fanglin Bao.
 
 My role focused on the AI side of HADAR research, including algorithm development and lightweight deployment for practical thermal perception. I helped push HADAR-related methods toward more efficient, deployable systems while maintaining the physical interpretability of temperature, emissivity, and environmental texture representations.
 

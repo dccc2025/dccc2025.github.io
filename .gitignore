@@ -1,6 +1,8 @@
 # Ignore the contents of the _site directory and other cache directories
 _site/
 .sass-cache/
+.gem/
+.jekyll-cache/
 
 # Ignore the directory for local files during development
 local/
@@ -11,6 +13,13 @@ Gemfile.lock
 # Ignore files created by npm
 node_modules
 package-lock.json
+
+# Ignore LaTeX build intermediates
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
 
 # Ignore the vendor file at root level and bundle for alternative installation
 /vendor/

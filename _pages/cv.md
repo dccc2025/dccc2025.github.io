@@ -9,56 +9,57 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<style>
+  .cv-entry {
+    margin-top: 1rem;
+    max-width: 720px;
+  }
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  .cv-status {
+    color: #9B1C31;
+    font-weight: 700;
+    font-size: 1.08em;
+    margin-bottom: 1.05rem;
+  }
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  .cv-link-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 0.85rem;
+  }
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  .cv-link-label {
+    font-weight: 600;
+  }
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  .cv-link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+  }
+
+  .cv-view-counter {
+    margin-top: 0.35rem;
+  }
+</style>
+
+<div class="cv-entry">
+  <p class="cv-status">
+    I am actively seeking Fall 2027 Ph.D. opportunities.
+  </p>
+
+  <div class="cv-link-row">
+    <span class="cv-link-label">Click here to see my CV:</span>
+    <a class="btn btn--primary cv-link-button" href="{{ base_path }}/files/ChengDai_cv.pdf" target="_blank" rel="noopener">
+      <i class="fas fa-file-pdf" aria-hidden="true"></i>
+      <span>CV Here</span>
+    </a>
+  </div>
+
+  <p class="cv-view-counter">
+    <img src="https://hits.sh/dccc2025.github.io/cv.svg?label=CV%20views&color=9B1C31&labelColor=343A40" alt="CV page view counter">
+  </p>
+</div>

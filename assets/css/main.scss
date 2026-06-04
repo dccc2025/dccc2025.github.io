@@ -76,6 +76,119 @@
   padding: 0 0.35rem;
 }
 
+.home-intro {
+  margin-bottom: 2.2rem;
+}
+
+.home-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.2rem 0 1.1rem;
+}
+
+.home-skills span {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  font-size: $type-size-6;
+  line-height: 1.35;
+}
+
+.home-alert {
+  color: #c1121f;
+  font-weight: bold;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.home-section {
+  margin-top: 2.1rem;
+}
+
+.home-section h2 {
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-work {
+  display: grid;
+  grid-template-columns: minmax(230px, 42%) minmax(0, 1fr);
+  gap: 1.1rem;
+  align-items: start;
+  margin: 1.2rem 0 1.7rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-work__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.home-work__body h3 {
+  margin: 0 0 0.35rem;
+  font-size: $type-size-4;
+}
+
+.home-work__meta {
+  margin: 0 0 0.45rem;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+}
+
+.home-work__links {
+  margin: 0.55rem 0 0;
+  font-size: $type-size-6;
+}
+
+.home-work__links span {
+  color: var(--global-text-color-light);
+  padding: 0 0.32rem;
+}
+
+.home-timeline {
+  border-left: 2px solid var(--global-border-color);
+  margin-left: 0.25rem;
+  padding-left: 1rem;
+}
+
+.home-timeline__item {
+  margin: 0 0 1rem;
+}
+
+.home-timeline__item span {
+  display: block;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+  font-weight: bold;
+}
+
+.home-timeline__item p {
+  margin: 0.15rem 0 0;
+}
+
 .experience-list {
   margin-top: 1rem;
 }
@@ -139,6 +252,10 @@
 }
 
 @media (max-width: 640px) {
+  .home-work {
+    grid-template-columns: 1fr;
+  }
+
   .experience-card {
     grid-template-columns: 1fr;
   }

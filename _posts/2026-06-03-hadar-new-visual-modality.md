@@ -12,7 +12,7 @@ tags:
 
 Most machine vision systems still see the world through proxies. RGB records how a scene appears under visible illumination. Depth sensors estimate geometry by projecting or receiving structured signals. These modalities have enabled remarkable progress, but they do not directly describe the stable physical properties of objects. They are sensitive to lighting, weather, surface reflectance, transparency, and occlusion.
 
-HADAR, short for heat-assisted detection and ranging, points to a different route: sensing the world through thermal radiation and recovering physical attributes from it. The original HADAR work, led by my advisor Fanglin Bao and published in *Nature* in 2023, formulated ground-based thermal perception using a radiative-transfer view of the scene. For an observed pixel or object element \(\alpha\), the measured thermal spectrum can be written conceptually as
+HADAR, short for heat-assisted detection and ranging, points to a different route: sensing the world through thermal radiation and recovering physical attributes from it. The original HADAR work, led by my advisor Fanglin Bao and published in *Nature* in 2023, formulated ground-based thermal perception using a radiative-transfer view of the scene. For an observed pixel or object element \\(\alpha\\), the measured thermal spectrum can be written conceptually as
 
 $$
 S_{\alpha}
@@ -20,7 +20,7 @@ S_{\alpha}
 + (1 - e_{\alpha}) \sum_{\beta \ne \alpha} S_{\beta} V_{\alpha\beta}.
 $$
 
-The first term is self-emission: an object radiates according to its temperature \(T\), emissivity \(e\), and Planck's blackbody law \(B(T)\). The second term is reflected environmental thermal radiation: each surface also reflects heat from the surrounding scene. In other words, a thermal hyperspectral image is not merely a blurry temperature map. It is a mixture of temperature, material response, geometry, and environmental illumination.
+The first term is self-emission: an object radiates according to its temperature \\(T\\), emissivity \\(e\\), and Planck's blackbody law \\(B(T)\\). The second term is reflected environmental thermal radiation: each surface also reflects heat from the surrounding scene. In other words, a thermal hyperspectral image is not merely a blurry temperature map. It is a mixture of temperature, material response, geometry, and environmental illumination.
 
 The key idea of HADAR is to invert this mixture. Instead of only producing an infrared image, HADAR tries to decompose the observed heat signal into a TeX representation: temperature, emissivity, and texture. In the first version of HADAR, texture was defined from the reflected environmental radiance. In our later internal formulation, which I call HADAR-v2 here, texture becomes a more learnable scalar factor determined jointly by scene geometry, emissivity, and sky/environmental structure.[^hadar-v2] This change matters because it turns texture from an unstable exposure-dependent radiance field into a physical coordinate that learning systems can better approximate.
 

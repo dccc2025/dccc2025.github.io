@@ -1,56 +1,115 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Cheng Dai"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+{% include base_path %}
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<section class="home-intro">
+  <div class="home-skills" aria-label="Research skills">
+    <span>Thermal Inversion</span>
+    <span>Computational Imaging</span>
+    <span>Generative AI</span>
+    <span>Multimodal LLMs</span>
+    <span>Audio Intelligence</span>
+    <span>Embodied AI Systems</span>
+    <span>Lightweight Deployment</span>
+  </div>
+  <p>
+    I work on thermal infrared hyperspectral imaging, HADAR-based physical vision, and efficient AI systems that move visual perception beyond appearance-only sensing. My current research focuses on temperature-emissivity-texture decomposition, physically interpretable thermal perception, and lightweight deployment for practical sensing systems.
+  </p>
+  <p class="home-alert">I am actively seeking 27 Fall PhD opportunities!</p>
+  <p>
+    I am deeply grateful for the guidance and support I have received from my mentors, senior students, and friends.
+  </p>
+  <p>
+    I am always open to collaborations and discussions. Please feel free to contact me at <a href="mailto:daicheng@westlake.edu.cn">daicheng@westlake.edu.cn</a>.
+  </p>
+  <p class="home-actions">
+    <a class="home-button" href="{{ base_path }}/files/ChengDai_cv.pdf">CV</a>
+    <a class="home-button" href="{{ base_path }}/publications/">Publications</a>
+    <a class="home-button" href="https://github.com/dccc2025">GitHub</a>
+  </p>
+</section>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<section class="home-section">
+  <h2>Selected Works</h2>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+  <article class="home-work">
+    <a class="home-work__figure" href="https://arxiv.org/abs/2606.03806">
+      <img src="{{ base_path }}/images/projects/tex1500_architecture_web.jpg" alt="TeX-UNet architecture for TeX-1500">
+    </a>
+    <div class="home-work__body">
+      <h3>TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark</h3>
+      <p class="home-work__meta">arXiv 2026 · Dataset and baseline for temperature-emissivity-texture decomposition</p>
+      <p>
+        TeX-1500 introduces a paired real-world long-wave infrared hyperspectral dataset for supervised HSI-to-TeX learning, together with TeX-UNet as a wavelength-aware baseline for physical-property-centered thermal perception.
+      </p>
+      <p class="home-work__links">
+        <a href="https://arxiv.org/abs/2606.03806">Paper</a>
+        <span>/</span>
+        <a href="https://github.com/dccc2025/TeX-1500">Code</a>
+        <span>/</span>
+        <a href="https://huggingface.co/datasets/jialelin2007/TeX-1500">Dataset</a>
+        <span>/</span>
+        <a href="https://huggingface.co/dccc2025/TeX-UNet">Model Weights</a>
+      </p>
+    </div>
+  </article>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+  <article class="home-work">
+    <a class="home-work__figure" href="https://arxiv.org/abs/2605.13664">
+      <img src="{{ base_path }}/images/projects/hair_main_figure_web.jpg" alt="HAIR restoration framework">
+    </a>
+    <div class="home-work__body">
+      <h3>HADAR-Based Thermal Infrared Hyperspectral Image Restoration</h3>
+      <p class="home-work__meta">arXiv 2026 · Physics-driven restoration for thermal infrared hyperspectral imaging</p>
+      <p>
+        HAIR restores degraded TIR-HSI through a physics-driven pipeline that combines degradation clean-up, spectral calibration, and TeX decomposition-synthesis under the HADAR radiative-transfer view.
+      </p>
+      <p class="home-work__links">
+        <a href="https://arxiv.org/abs/2605.13664">Paper</a>
+        <span>/</span>
+        <a href="https://github.com/jialelin2007/HAIR">Code</a>
+      </p>
+    </div>
+  </article>
+</section>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<section class="home-section">
+  <h2>Timeline</h2>
+  <div class="home-timeline">
+    <div class="home-timeline__item">
+      <span>2026.06</span>
+      <p><strong>TeX-1500</strong> released as a paired real-world LWIR HSI-TeX dataset and benchmark.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2026.05</span>
+      <p><strong>HAIR</strong> released as a HADAR-based restoration framework for thermal infrared hyperspectral images.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2025.09 - Current</span>
+      <p><strong>Research Assistant, AI for Physics Lab, Westlake University.</strong> Worked on HADAR algorithms, TeX decomposition, and lightweight thermal perception under the guidance of Xin Yuan and Fanglin Bao.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2025.04 - 2025.09</span>
+      <p><strong>Audio AI Intern, Amoon AI.</strong> Worked on low-resource infant-cry activity detection and state classification, audio foundation-model fine-tuning, and edge deployment.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2024.12 - 2025.02</span>
+      <p><strong>AI Engineering Intern, Lightwheel AI.</strong> Built engineering tools for embodied AI workflows, including RoboCasa plugin development and teleoperation tooling.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2025.09 - 2026.03</span>
+      <p><strong>Graduate Study, Wuhan University.</strong> Studied Communication Engineering at the State Key Laboratory of Surveying, Mapping and Remote Sensing Information Engineering.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2021.08 - 2025.06</span>
+      <p><strong>B.Eng. in Communication Engineering, Jilin University.</strong> Built foundations in signal processing, communication systems, mathematical modeling, and engineering practice.</p>
+    </div>
+  </div>
+</section>

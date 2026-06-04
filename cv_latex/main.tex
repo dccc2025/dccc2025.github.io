@@ -1,0 +1,118 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.42in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{9B1C31}
+\definecolor{text}{HTML}{202428}
+\definecolor{muted}{HTML}{5D646B}
+\definecolor{rule}{HTML}{BFC5CC}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\urlstyle{same}
+\color{text}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{0.06em}{\color{rule}\titlerule}]
+\titlespacing*{\section}{0pt}{0.82em}{0.66em}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=0.12em, topsep=2pt, parsep=0pt, partopsep=0pt}
+\renewcommand{\labelitemi}{\raisebox{0.2ex}{\scriptsize$\bullet$}}
+\hyphenpenalty=9000
+\exhyphenpenalty=9000
+\emergencystretch=2em
+
+\newcommand{\heading}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & {\color{muted}#2}\\[-0.18em]
+    {\footnotesize\color{muted}#3} & {\footnotesize\color{muted}#4}
+  \end{tabularx}\vspace{-0.15em}
+}
+
+\newcounter{pubnum}
+\newcommand{\pub}[4]{%
+  \refstepcounter{pubnum}%
+  \textbf{[\thepubnum]} \textbf{#1}. {\color{muted}#2}. {\small #4}\\[-0.08em]
+  \hspace*{1.45em}#3\vspace{0.62em}
+}
+
+\begin{document}
+\fontsize{8.65}{9.65}\selectfont
+
+\begin{center}
+  {\Huge\bfseries Cheng Dai}\\[-0.05em]
+  Hangzhou, China \;|\; \href{mailto:daicheng@westlake.edu.cn}{daicheng@westlake.edu.cn} \;|\; +86 177-8646-8465\\[-0.05em]
+  \href{https://dccc2025.github.io/}{Homepage} \;|\;
+  \href{https://github.com/dccc2025}{GitHub} \;|\;
+  \href{https://www.linkedin.com/in/cheng-dai-443432403/}{LinkedIn} \;|\;
+  \href{https://scholar.google.com/citations?hl=zh-CN\&user=vJrsT54AAAAJ}{Google Scholar} \;|\;
+  \href{https://orcid.org/0009-0003-4383-3694}{ORCID}\\[0.25em]
+  {\color{accent}\bfseries I am actively seeking Fall 2027 Ph.D. opportunities.}
+\end{center}
+
+\vspace{-0.35em}
+\section{Research Profile}
+Thermal infrared hyperspectral imaging, HADAR-based physical vision, thermal inversion, computational imaging, generative AI, multimodal LLMs, audio intelligence, embodied AI systems, and lightweight deployment.
+
+\section{Publications and Preprints}
+\pub{\href{https://arxiv.org/abs/2606.03806}{TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark for Temperature-Emissivity-Texture Decomposition}}{arXiv, 2026}{\textbf{Cheng Dai}, Jiale Lin, Hongyi Xu, Bingxuan Song, Ziyang Xie, and Fanglin Bao}{\href{https://arxiv.org/abs/2606.03806}{Paper} \;|\; \href{https://github.com/dccc2025/TeX-1500}{Code} \;|\; \href{https://huggingface.co/datasets/jialelin2007/TeX-1500}{Dataset} \;|\; \href{https://huggingface.co/dccc2025/TeX-UNet}{Model Weights}}
+
+\pub{\href{https://arxiv.org/abs/2605.13664}{HADAR-Based Thermal Infrared Hyperspectral Image Restoration}}{arXiv, 2026}{\textbf{Cheng Dai}, Jiale Lin, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao}{\href{https://arxiv.org/abs/2605.13664}{Paper} \;|\; \href{https://github.com/jialelin2007/HAIR}{Code}}
+
+\section{Education}
+\heading{Wuhan University}{2025.09--2026.03}{Graduate Study in Communication Engineering, State Key Lab. of Surveying, Mapping and Remote Sensing}{}
+\begin{itemize}
+  \item Average 90.79/100; First-class graduate scholarship; shifted research toward thermal infrared HSI and physical vision.
+\end{itemize}
+\vspace{0.55em}
+
+\heading{Jilin University}{2021.08--2025.06}{B.Eng. in Communication Engineering, School of Communication Engineering}{}
+\begin{itemize}
+  \item GPA 90.58/100; ranked 12/283.
+\end{itemize}
+
+\section{Research Experience}
+\heading{Research Assistant, AI for Physics Lab}{2025.09--Present}{Westlake University; advised by Xin Yuan and Fanglin Bao}{}
+\begin{itemize}
+  \item Designed HADAR algorithms for thermal HSI restoration, TeX decomposition, and lightweight physical perception.
+  \item Built TeX-1500 with 1,522 calibrated LWIR HSI-TeX pairs and TeX-UNet; released code, dataset, and weights.
+  \item Co-developed HAIR for thermal HSI denoising, spectral calibration, inpainting, and super-resolution.
+  \item Prototyped accelerated HADAR inversion with CUDA/JAX-style parallelization across spectral layouts.
+\end{itemize}
+
+\section{Industry Experience}
+\heading{Audio AI Intern}{2025.04--2025.09}{Amoon AI, Audio Algorithm Team}{}
+\begin{itemize}
+  \item Collected 20k high-confidence infant-cry clips and expanded low-resource data with iterative pseudo-labeling.
+  \item Fine-tuned BEATs, Audio-MAE, Wav2Vec2, Qwen-Audio, and CLAP; trained a Conformer from scratch.
+  \item Used logs, phonetic rules, and staged training to reach 67.2\% five-class accuracy and handle corner cases.
+  \item Built six infant-VAD datasets and a detector with 98\% accuracy and below 5\% false alarms for edge deployment.
+  \item Ran 60+ benchmarking experiments and related-method analyses for paper preparation.
+\end{itemize}
+
+\heading{AI Engineering Intern}{2024.12--2025.02}{Lightwheel AI, Embodied Asset Team}{}
+\begin{itemize}
+  \item Built tools for embodied simulation, asset construction, data collection, and teleoperation with Blender, MuJoCo, and RoboCasa.
+  \item Developed SpaceMouse and Blender2YAML/YAML2Blender plugins, reducing validation cycles from roughly 20 days to 1 day.
+  \item Maintained RoboCasa code: \href{https://github.com/ruziniuuuuu/robocasa}{github.com/ruziniuuuuu/robocasa}.
+\end{itemize}
+
+\section{Honors and Awards}
+\begin{itemize}
+  \item Outstanding Graduate of Jilin University (top 5\%); Outstanding Undergraduate Thesis (top 3\%); First-Class Scholarship (1x), Second-Class Scholarship (3x), Academic and Technology Award (3x), Outstanding Student of the School (4x).
+  \item Principal investigator of two completed innovation projects: a provincial reading-assistance system for visually impaired users, and a Chinese Academy of Sciences (CAS) / Changchun Institute of Optics, Fine Mechanics and Physics project on infrared small-target super-resolution, completed with excellent evaluation.
+  \item First Prize, provincial National College Student Mathematics Competition; Honorable Mention, Mathematical Contest in Modeling; UCLA UAV communication course, Grade A.
+  \item English CET-6: 508; CET-4: 521; college Russian elementary/intermediate courses: Excellent; one year of college German study.
+\end{itemize}
+
+\end{document}
