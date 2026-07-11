@@ -27,7 +27,7 @@ redirect_from:
     I am deeply grateful for the guidance and support I have received from my mentors, senior students, and friends.
   </p>
   <p>
-    I am always open to collaborations and discussions. Please feel free to contact me at <a href="mailto:daicheng@westlake.edu.cn">daicheng@westlake.edu.cn</a>.
+    I am always open to collaborations and discussions. Please feel free to contact me at <a href="mailto:daichengwhu2025@gmail.com">daichengwhu2025@gmail.com</a>.
   </p>
   <p class="home-actions">
     <a class="home-button" href="{{ base_path }}/files/ChengDai_cv.pdf">CV</a>
