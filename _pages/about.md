@@ -107,6 +107,14 @@ redirect_from:
   <h2>Timeline</h2>
   <div class="home-timeline">
     <div class="home-timeline__item">
+      <span>2026.08</span>
+      <p><strong>T<sup>2</sup>exture</strong> released as a sparsely perturbed thermal-to-texture imaging framework for reconstructing dense thermal texture sequences from sparse active acquisitions.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2026.07 - Current</span>
+      <p><strong>Research Assistant, Institute for AI Industry Research, Tsinghua University.</strong><br>Worked on LLM quantization, physical vision, and robotics.</p>
+    </div>
+    <div class="home-timeline__item">
       <span>2026.06</span>
       <p><strong>TeX-1500</strong> released as a paired real-world LWIR HSI-TeX dataset and benchmark.</p>
     </div>
@@ -115,16 +123,16 @@ redirect_from:
       <p><strong>HAIR</strong> released as a HADAR-based restoration framework for thermal infrared hyperspectral images.</p>
     </div>
     <div class="home-timeline__item">
-      <span>2025.09 - Current</span>
-      <p><strong>Research Assistant, AI for Physics Lab, Westlake University.</strong> Worked on HADAR algorithms, TeX decomposition, and lightweight thermal perception under the guidance of Xin Yuan and Fanglin Bao.</p>
+      <span>2025.09 - 2026.07</span>
+      <p><strong>Research Assistant, AI for Physics Lab, Westlake University.</strong><br>Worked on HADAR algorithms, TeX decomposition, and lightweight thermal perception under the guidance of Xin Yuan and Fanglin Bao.</p>
     </div>
     <div class="home-timeline__item">
       <span>2025.04 - 2025.09</span>
-      <p><strong>Audio AI Intern, Amoon AI.</strong> Worked on low-resource infant-cry activity detection and state classification, audio foundation-model fine-tuning, and edge deployment.</p>
+      <p><strong>Audio AI Intern, Amoon AI.</strong><br>Worked on low-resource infant-cry activity detection and state classification, audio foundation-model fine-tuning, and edge deployment.</p>
     </div>
     <div class="home-timeline__item">
       <span>2024.12 - 2025.02</span>
-      <p><strong>AI Engineering Intern, Lightwheel AI.</strong> Built engineering tools for embodied AI workflows, including RoboCasa plugin development and teleoperation tooling.</p>
+      <p><strong>AI Engineering Intern, Lightwheel AI.</strong><br>Built engineering tools for embodied AI workflows, including RoboCasa plugin development and teleoperation tooling.</p>
     </div>
     <div class="home-timeline__item">
       <span>2025.09 - 2026.03</span>
