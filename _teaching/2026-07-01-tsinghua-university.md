@@ -7,7 +7,6 @@ venue: "Institute for AI Industry Research, Tsinghua University"
 date: 2026-07-01
 location: "Beijing, China"
 logo: "institutions/tsinghua_university.svg"
-logo_theme: "dark"
 excerpt: "Research assistant at the Institute for AI Industry Research, Tsinghua University, advised by Chaojian Li and Hao Zhao, working on LLM quantization, physical vision, and robotics."
 ---
 
