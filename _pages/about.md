@@ -14,22 +14,19 @@ redirect_from:
     <span>LLM Quantization</span>
     <span>Multimodal LLMs</span>
     <span>Large Audio Models</span>
-    <span>Embodied AI</span>
+    <span>Embodied Simulation</span>
     <span>Quantum Machine Learning</span>
-    <span>Computational Imaging</span>
     <span>Physical AI</span>
     <span>Hyperspectral Image Processing</span>
+    <span>Heat-assisted Detection and Ranging</span>
   </div>
   <p>
-    My current research focuses on LLM quantization, multimodal LLMs, and physics-based imaging.
+    My current research focuses on LLM quantization, multimodal LLMs, and physical AI.
   </p>
   <p>
-    I also have experience with HADAR-based physical vision, featured on the cover of <em>Nature</em> in 2023; audio signal processing, including text-to-speech, pattern recognition, and downstream task fine-tuning; and embodied simulation, including asset development, teleoperation, and plugin development.
+    I also have experience with <strong><a href="https://www.nature.com/articles/s41586-023-06174-6">HADAR-based physical vision</a></strong>; <strong>audio signal processing</strong>, including text-to-speech, pattern recognition, and downstream task fine-tuning; and <strong>embodied simulation</strong>, including asset development, teleoperation, and plugin development.
   </p>
   <p class="home-alert">I am actively seeking 27 Fall PhD opportunities!</p>
-  <p>
-    I am deeply grateful for the guidance and support I have received from my mentors, senior students, and friends.
-  </p>
   <p>
     I am always open to collaborations and discussions. Please feel free to contact me.
   </p>
@@ -42,6 +39,28 @@ redirect_from:
 
 <section class="home-section">
   <h2>Selected Works</h2>
+
+  <article class="home-work">
+    <a class="home-work__figure" href="https://arxiv.org/pdf/2608.02192">
+      <img src="{{ base_path }}/images/projects/t2exture_main_figure_web.jpg" alt="T squared exture thermal texture imaging framework">
+    </a>
+    <div class="home-work__body">
+      <h3>T<sup>2</sup>exture: Sparsely Perturbed Thermal-to-Texture Imaging</h3>
+      <p class="home-work__meta">arXiv 2026 · Thermal texture imaging under sparse active acquisition</p>
+      <p>
+        T<sup>2</sup>exture reconstructs temporally dense thermal texture sequences from densely sampled passive frames and a small number of actively perturbed keyframes, using source-off state estimation and structure- and semantic-guided propagation.
+      </p>
+      <p class="home-work__links">
+        <a href="https://arxiv.org/pdf/2608.02192">Paper</a>
+        <span>/</span>
+        <a href="https://github.com/dccc2025/T2exture">Code</a>
+        <span>/</span>
+        <a href="https://huggingface.co/datasets/chenjiashuo/T2exture_datasets">Dataset</a>
+        <span>/</span>
+        <a href="https://huggingface.co/chenjiashuo/T2exture_model">Model Weights</a>
+      </p>
+    </div>
+  </article>
 
   <article class="home-work">
     <a class="home-work__figure" href="https://arxiv.org/abs/2606.03806">
