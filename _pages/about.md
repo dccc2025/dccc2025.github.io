@@ -11,23 +11,27 @@ redirect_from:
 
 <section class="home-intro">
   <div class="home-skills" aria-label="Research skills">
-    <span>Thermal Inversion</span>
-    <span>Computational Imaging</span>
-    <span>Generative AI</span>
+    <span>LLM Quantization</span>
     <span>Multimodal LLMs</span>
-    <span>Audio Intelligence</span>
-    <span>Embodied AI Systems</span>
-    <span>Lightweight Deployment</span>
+    <span>Large Audio Models</span>
+    <span>Embodied AI</span>
+    <span>Quantum Machine Learning</span>
+    <span>Computational Imaging</span>
+    <span>Physical AI</span>
+    <span>Hyperspectral Image Processing</span>
   </div>
   <p>
-    I work on thermal infrared hyperspectral imaging, HADAR-based physical vision, and efficient AI systems that move visual perception beyond appearance-only sensing. My current research focuses on temperature-emissivity-texture decomposition, physically interpretable thermal perception, and lightweight deployment for practical sensing systems.
+    My current research focuses on LLM quantization, multimodal LLMs, and physics-based imaging.
+  </p>
+  <p>
+    I also have experience with HADAR-based physical vision, featured on the cover of <em>Nature</em> in 2023; audio signal processing, including text-to-speech, pattern recognition, and downstream task fine-tuning; and embodied simulation, including asset development, teleoperation, and plugin development.
   </p>
   <p class="home-alert">I am actively seeking 27 Fall PhD opportunities!</p>
   <p>
     I am deeply grateful for the guidance and support I have received from my mentors, senior students, and friends.
   </p>
   <p>
-    I am always open to collaborations and discussions. Please feel free to contact me at <a href="mailto:daichengwhu2025@gmail.com">daichengwhu2025@gmail.com</a>.
+    I am always open to collaborations and discussions. Please feel free to contact me.
   </p>
   <p class="home-actions">
     <a class="home-button" href="{{ base_path }}/files/ChengDai_cv.pdf">CV</a>
