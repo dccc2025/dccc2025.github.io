@@ -62,6 +62,13 @@
   line-height: 1.45;
 }
 
+.publication-item__contribution {
+  margin: -0.2rem 0 0.45rem;
+  color: var(--global-text-color-light);
+  font-size: $type-size-7;
+  font-style: italic;
+}
+
 .publication-item__excerpt {
   margin-bottom: 0.45rem;
 }

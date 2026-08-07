@@ -6,7 +6,8 @@ permalink: /publication/2026-05-13-hadar-based-thermal-infrared-hyperspectral-im
 excerpt: "We propose HAIR, a physics-driven framework for ground-based thermal-infrared hyperspectral image restoration. HAIR combines the HADAR rendering equation with atmospheric downwelling radiative transfer to restore TIR-HSI through physically interpretable temperature, emissivity, and texture components."
 date: 2026-05-13
 venue: "arXiv"
-authors: "Cheng Dai, Jiale Lin, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao"
+authors: "Cheng Dai<sup>*</sup>, Jiale Lin<sup>*</sup>, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao"
+contribution_note: "<sup>*</sup> Equal contribution."
 paperurl: "https://arxiv.org/abs/2605.13664"
 githuburl: "https://github.com/jialelin2007/HAIR"
 citation: "Cheng Dai, Jiale Lin, Bingxuan Song, Yifei Chen, Jiashuo Chen, Xin Yuan, and Fanglin Bao. (2026). &quot;HADAR-Based Thermal Infrared Hyperspectral Image Restoration.&quot; <i>arXiv preprint arXiv:2605.13664</i>."

@@ -120,11 +120,15 @@ redirect_from:
     </div>
     <div class="home-timeline__item">
       <span>2026.05</span>
-      <p><strong>HAIR</strong> released as a HADAR-based restoration framework for thermal infrared hyperspectral images.</p>
+      <p><strong>HAIR</strong> released as a HADAR-based restoration framework for thermal hyperspectral images.</p>
     </div>
     <div class="home-timeline__item">
       <span>2025.09 - 2026.07</span>
       <p><strong>Research Assistant, AI for Physics Lab, Westlake University.</strong><br>Worked on HADAR algorithms, TeX decomposition, and lightweight thermal perception under the guidance of Xin Yuan and Fanglin Bao.</p>
+    </div>
+    <div class="home-timeline__item">
+      <span>2025.09 - 2026.03</span>
+      <p><strong>Graduate Study, Wuhan University.</strong> Studied Communication Engineering at the State Key Laboratory of Surveying, Mapping and Remote Sensing Information Engineering.</p>
     </div>
     <div class="home-timeline__item">
       <span>2025.04 - 2025.09</span>
@@ -133,10 +137,6 @@ redirect_from:
     <div class="home-timeline__item">
       <span>2024.12 - 2025.02</span>
       <p><strong>AI Engineering Intern, Lightwheel AI.</strong><br>Built engineering tools for embodied AI workflows, including RoboCasa plugin development and teleoperation tooling.</p>
-    </div>
-    <div class="home-timeline__item">
-      <span>2025.09 - 2026.03</span>
-      <p><strong>Graduate Study, Wuhan University.</strong> Studied Communication Engineering at the State Key Laboratory of Surveying, Mapping and Remote Sensing Information Engineering.</p>
     </div>
     <div class="home-timeline__item">
       <span>2021.08 - 2025.06</span>

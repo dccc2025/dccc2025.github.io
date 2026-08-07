@@ -14,6 +14,10 @@
       <p class="publication-item__authors">{{ authors }}</p>
     {% endif %}
 
+    {% if post.contribution_note %}
+      <p class="publication-item__contribution">{{ post.contribution_note }}</p>
+    {% endif %}
+
     {% if post.excerpt %}
       <p class="archive__item-excerpt publication-item__excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
