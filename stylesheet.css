@@ -132,13 +132,19 @@ td em {
   line-height: 1.55;
 }
 
+.intro-photo {
+  width: 128px !important;
+  max-width: 128px !important;
+}
+
+.portrait,
 .intro-photo img {
-  width: 148px !important;
-  height: 148px !important;
-  max-width: 148px !important;
+  width: 112px !important;
+  height: 146px !important;
+  max-width: 112px !important;
+  border-radius: 0 !important;
   object-fit: cover;
   object-position: center center;
-  border-radius: 50%;
   display: block;
 }
 
@@ -156,16 +162,17 @@ td em {
 
   .intro-photo {
     order: -1;
-    width: 112px !important;
-    max-width: 112px !important;
+    width: 96px !important;
+    max-width: 96px !important;
     margin: 16px auto 0;
     padding: 0 !important;
   }
 
+  .portrait,
   .intro-photo img {
-    width: 112px !important;
-    height: 112px !important;
-    max-width: 112px !important;
+    width: 84px !important;
+    height: 110px !important;
+    max-width: 84px !important;
   }
 }
 
