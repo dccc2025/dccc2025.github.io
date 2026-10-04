@@ -1,0 +1,277 @@
+/* Load Linux Libertine from the site so it is available on every device. */
+@font-face {
+  font-family: 'Linux Libertine Web';
+  src: url('fonts/LinLibertine-R.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Web';
+  src: url('fonts/LinLibertine-RB.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Web';
+  src: url('fonts/LinLibertine-RI.otf') format('opentype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Web';
+  src: url('fonts/LinLibertine-RBI.otf') format('opentype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+html {
+  color-scheme: light;
+  background: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Linux Libertine Web', 'Linux Libertine', 'Linux Libertine O', 'Linux Libertine G', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 16px;
+}
+
+strong {
+  font-family: 'Linux Libertine Web', 'Linux Libertine', 'Linux Libertine O', 'Linux Libertine G', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Linux Libertine Web', 'Linux Libertine', 'Linux Libertine O', 'Linux Libertine G', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 22px;
+}
+
+.papertitle {
+  font-family: 'Linux Libertine Web', 'Linux Libertine', 'Linux Libertine O', 'Linux Libertine G', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+td em {
+  font-style: normal;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Linux Libertine Web', 'Linux Libertine', 'Linux Libertine O', 'Linux Libertine G', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 32px;
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.phd-news {
+  display: flex;
+  gap: 16px;
+  margin: 10px 16px 14px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #fff8e8 0%, #fffdf7 100%);
+  border: 1px solid #f4c66a;
+  border-left: 5px solid #e88b16;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(146, 64, 14, 0.1);
+}
+
+.phd-news-badge {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 4px 8px;
+  color: #fff;
+  background: #d86f0b;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.phd-news h2 {
+  color: #8a3f08;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.phd-news p {
+  margin: 9px 0 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  .intro tr {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .intro-copy,
+  .intro-photo {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  .intro-photo {
+    order: -1;
+    width: 168px !important;
+    margin: 16px auto 0;
+    padding: 0 !important;
+  }
+
+  .intro-photo img {
+    width: 168px;
+    height: 168px;
+  }
+}
+
+@media (max-width: 600px) {
+  .phd-news {
+    display: block;
+    margin: 8px 10px 12px;
+    padding: 16px;
+  }
+
+  .phd-news-badge {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+
+  .phd-news h2 {
+    font-size: 19px;
+  }
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag-arch {
+  background-color: #e0e7ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+.tag-sys {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+.tag-algo {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+.tag-imaging {
+  background-color: #ffedd5;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+}
+.tag-data {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+.tag-restore {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.logo-plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+}
+
+.logo-plate img {
+  max-width: 140px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-plate--dark {
+  background: #1f2933;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.work-links {
+  margin-top: 6px;
+}
+
+.timeline-date {
+  color: #555;
+}
