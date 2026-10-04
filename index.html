@@ -45,7 +45,7 @@
                   Cheng Dai
                 </p>
                 <p>
-                  My research interests mainly specialize in <strong>computational imaging</strong>, <strong>agentic benchmarks</strong>, and <strong>embodied intelligence</strong>.
+                  My former research focused on <strong>computational imaging</strong>, <strong>agentic benchmarks</strong>, and <strong>embodied intelligence</strong>.
                 </p>
                 <p>
                   I also have experience with <strong><a href="https://www.nature.com/articles/s41586-023-06174-6">HADAR-based physical vision</a></strong>; <strong>audio signal processing</strong>, including text-to-speech, pattern recognition, and downstream task fine-tuning; and <strong>embodied simulation</strong>, including asset development, teleoperation, and plugin development.
@@ -62,7 +62,7 @@
                   <a href="images/vx_connection.jpg">WeChat</a>
                 </p>
               </td>
-              <td class="intro-photo" style="padding:16px 8px;width:132px;max-width:132px">
+              <td class="intro-photo" style="padding:16px 8px;width:53px;max-width:53px">
                 <a href="images/profile.jpg"><img alt="profile photo" src="images/profile.jpg"></a>
               </td>
             </tr>
@@ -83,7 +83,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research Interests</h2>
                 <p>
-                  My research interests mainly specialize in computational imaging, agentic benchmarks, and embodied intelligence. My research is moving this work down the stack, toward <strong>high-performance computing</strong>, <strong>large-language-model inference</strong>, and <strong>world-model</strong> to support reliable <strong>perception</strong>, <strong>reasoning</strong>, and <strong>interaction</strong> in real-world environments.
+                  My former research focused on computational imaging, agentic benchmarks, and embodied intelligence. My research is moving this work down the stack, toward <strong>high-performance computing</strong>, <strong>large-language-model inference</strong>, and <strong>world-model</strong> to support reliable <strong>perception</strong>, <strong>reasoning</strong>, and <strong>interaction</strong> in real-world environments.
                 </p>
               </td>
             </tr>
@@ -185,54 +185,6 @@
               </td>
             </tr>
           </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px 16px 8px;width:100%;vertical-align:middle">
-                <h2>Research Progress</h2>
-                <p class="section-note">Paper updates. Scroll sideways to read each work.</p>
-              </td>
-            </tr>
-          </tbody></table>
-          <div class="paper-rail-wrap">
-            <button class="paper-nav" type="button" data-dir="-1" aria-label="Previous paper">&#8249;</button>
-            <div class="paper-rail" id="paper-rail" tabindex="0">
-              <article class="paper-card">
-                <p class="paper-card__date">Aug. 2026</p>
-                <h3><a href="https://arxiv.org/pdf/2608.02192">T<sup>2</sup>exture: Sparsely Perturbed Thermal-to-Texture Imaging</a></h3>
-                <p class="paper-status">AAAI 2027 Phase 2 under review</p>
-                <p>T<sup>2</sup>exture reconstructs temporally dense thermal texture sequences from densely sampled passive frames and a small number of actively perturbed keyframes, using source-off state estimation and structure- and semantic-guided propagation.</p>
-                <p class="work-links">
-                  <a href="https://arxiv.org/pdf/2608.02192">Paper</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/dccc2025/T2exture">Code</a> &nbsp;/&nbsp;
-                  <a href="https://huggingface.co/datasets/chenjiashuo/T2exture_datasets">Dataset</a> &nbsp;/&nbsp;
-                  <a href="https://huggingface.co/chenjiashuo/T2exture_model">Model Weights</a>
-                </p>
-              </article>
-              <article class="paper-card">
-                <p class="paper-card__date">Jun. 2026</p>
-                <h3><a href="https://arxiv.org/abs/2606.03806">TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark</a></h3>
-                <p>TeX-1500 introduces a paired real-world long-wave infrared hyperspectral dataset for supervised HSI-to-TeX learning, together with TeX-UNet as a wavelength-aware baseline for physical-property-centered thermal perception.</p>
-                <p class="work-links">
-                  <a href="https://arxiv.org/abs/2606.03806">Paper</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/dccc2025/TeX-1500">Code</a> &nbsp;/&nbsp;
-                  <a href="https://huggingface.co/datasets/jialelin2007/TeX-1500">Dataset</a> &nbsp;/&nbsp;
-                  <a href="https://huggingface.co/dccc2025/TeX-UNet">Model Weights</a>
-                </p>
-              </article>
-              <article class="paper-card">
-                <p class="paper-card__date">May 2026</p>
-                <h3><a href="https://arxiv.org/abs/2605.13664">HADAR-Based Thermal Infrared Hyperspectral Image Restoration</a></h3>
-                <p class="paper-status">IEEE Transactions on Image Processing under review</p>
-                <p>HAIR restores degraded TIR-HSI through a physics-driven pipeline that combines degradation clean-up, spectral calibration, and TeX decomposition-synthesis under the HADAR radiative-transfer view.</p>
-                <p class="work-links">
-                  <a href="https://arxiv.org/abs/2605.13664">Paper</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jialelin2007/HAIR">Code</a>
-                </p>
-              </article>
-            </div>
-            <button class="paper-nav" type="button" data-dir="1" aria-label="Next paper">&#8250;</button>
-          </div>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -339,18 +291,5 @@
         </td>
       </tr>
     </tbody></table>
-    <script>
-      (function () {
-        var rail = document.getElementById("paper-rail");
-        if (!rail) return;
-        document.querySelectorAll(".paper-nav").forEach(function (button) {
-          button.addEventListener("click", function () {
-            var card = rail.querySelector(".paper-card");
-            var distance = card ? card.getBoundingClientRect().width + 12 : rail.clientWidth * 0.8;
-            rail.scrollBy({ left: Number(button.getAttribute("data-dir")) * distance, behavior: "smooth" });
-          });
-        });
-      })();
-    </script>
   </body>
 </html>

@@ -133,8 +133,8 @@ td em {
 }
 
 .intro-photo img {
-  width: 132px;
-  height: 132px;
+  width: 53px;
+  height: 53px;
   object-fit: cover;
   object-position: center center;
   border-radius: 50%;
@@ -156,15 +156,15 @@ td em {
 
   .intro-photo {
     order: -1;
-    width: 112px !important;
-    max-width: 112px !important;
+    width: 45px !important;
+    max-width: 45px !important;
     margin: 16px auto 0;
     padding: 0 !important;
   }
 
   .intro-photo img {
-    width: 112px;
-    height: 112px;
+    width: 45px;
+    height: 45px;
   }
 }
 
