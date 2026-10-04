@@ -133,8 +133,9 @@ td em {
 }
 
 .intro-photo img {
-  width: 53px;
-  height: 53px;
+  width: 148px !important;
+  height: 148px !important;
+  max-width: 148px !important;
   object-fit: cover;
   object-position: center center;
   border-radius: 50%;
@@ -148,23 +149,23 @@ td em {
     align-items: stretch;
   }
 
-  .intro-copy,
-  .intro-photo {
+  .intro-copy {
     width: auto !important;
     max-width: 100% !important;
   }
 
   .intro-photo {
     order: -1;
-    width: 45px !important;
-    max-width: 45px !important;
+    width: 112px !important;
+    max-width: 112px !important;
     margin: 16px auto 0;
     padding: 0 !important;
   }
 
   .intro-photo img {
-    width: 45px;
-    height: 45px;
+    width: 112px !important;
+    height: 112px !important;
+    max-width: 112px !important;
   }
 }
 
