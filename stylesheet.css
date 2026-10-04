@@ -132,6 +132,15 @@ td em {
   line-height: 1.55;
 }
 
+.intro-photo img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
 @media (max-width: 640px) {
   .intro tr {
     display: flex;
@@ -147,14 +156,15 @@ td em {
 
   .intro-photo {
     order: -1;
-    width: 168px !important;
+    width: 112px !important;
+    max-width: 112px !important;
     margin: 16px auto 0;
     padding: 0 !important;
   }
 
   .intro-photo img {
-    width: 168px;
-    height: 168px;
+    width: 112px;
+    height: 112px;
   }
 }
 
