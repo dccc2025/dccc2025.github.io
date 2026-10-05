@@ -340,6 +340,17 @@ span.highlight {
   white-space: nowrap;
 }
 
+@media (max-width: 600px) {
+  .timeline-box p {
+    display: block;
+  }
+
+  .timeline-date {
+    display: block;
+    margin-bottom: 2px;
+  }
+}
+
 .section-note {
   margin: 6px 0 0;
   color: #666;
