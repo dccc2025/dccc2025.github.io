@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261005e">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261005f">
 
     <meta property="og:title" content="Cheng Dai">
     <meta property="og:description" content="Cheng Dai's homepage.">
@@ -96,7 +96,8 @@
               </td>
             </tr>
           </tbody></table>
-          <div class="timeline-box">
+          <div class="news-frame">
+          <div class="timeline-box" id="news-box">
             <p><span class="timeline-date">2026.08</span><span class="timeline-text">Collaborating with UCB and Benchflow AI, we submit <a href="https://openreview.net/forum?id=Q4Iyl2xyt4">FrontierPhysics</a> to ICLR 2027 conference.</span></p>
             <p><span class="timeline-date">2026.08</span><span class="timeline-text">Release <a href="https://arxiv.org/abs/2608.02192">T<sup>2</sup>exture</a>, a sparsely perturbed thermal-to-texture imaging framework; AAAI 2027 Phase 2 under review.</span></p>
             <p><span class="timeline-date">2026.07 &ndash; ?</span><span class="timeline-text">Tsinghua U, Institute for AI Industry Research, research assistant. Supervisors: <a href="https://licj15.github.io/">Chaojian Li</a> and <a href="https://air.tsinghua.edu.cn/info/1046/1945.htm">Hao Zhao</a>.</span></p>
@@ -107,6 +108,8 @@
             <p><span class="timeline-date">2025.04 &ndash; 2025.09</span><span class="timeline-text">Research Intern at Amoon AI, Large Audio Model Department.</span></p>
             <p><span class="timeline-date">2021.09 &ndash; 2025.06</span><span class="timeline-text">B.Sc. in Communication Engineering, Jilin University.</span></p>
             <p><span class="timeline-date">2024.12 &ndash; 2025.02</span><span class="timeline-text">Research Intern at Lightwheel, Embodied Assets Group. Group leaders: <a href="https://www.linkedin.com/in/yjmade/">Jian Yang</a> and <a href="https://github.com/snasiriany">Soroush Nasiriany</a>.</span></p>
+          </div>
+          <div class="news-scrollbar" aria-hidden="true"><div class="news-scrollbar-thumb"></div></div>
           </div>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -304,5 +307,24 @@
         </td>
       </tr>
     </tbody></table>
+    <script>
+      (function () {
+        var box = document.getElementById("news-box");
+        var thumb = document.querySelector(".news-scrollbar-thumb");
+        if (!box || !thumb) return;
+        function place() {
+          var track = box.clientHeight - 20;
+          var ratio = box.clientHeight / box.scrollHeight;
+          var height = Math.max(28, track * ratio);
+          var max = box.scrollHeight - box.clientHeight;
+          var top = max <= 0 ? 0 : (box.scrollTop / max) * (track - height);
+          thumb.style.height = height + "px";
+          thumb.style.top = top + "px";
+        }
+        box.addEventListener("scroll", place);
+        window.addEventListener("resize", place);
+        place();
+      })();
+    </script>
   </body>
 </html>
