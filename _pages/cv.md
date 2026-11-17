@@ -57,6 +57,14 @@ redirect_from:
       <i class="fas fa-file-pdf" aria-hidden="true"></i>
       <span>CV Here</span>
     </a>
+    <a class="btn btn--primary cv-link-button" href="{{ base_path }}/files/ChengDai_JLU_transcript.pdf" target="_blank" rel="noopener">
+      <i class="fas fa-file-pdf" aria-hidden="true"></i>
+      <span>JLU Transcript</span>
+    </a>
+    <a class="btn btn--primary cv-link-button" href="{{ base_path }}/files/ChengDai_WHU_transcript.pdf" target="_blank" rel="noopener">
+      <i class="fas fa-file-pdf" aria-hidden="true"></i>
+      <span>WHU Transcript</span>
+    </a>
   </div>
 
   <p class="cv-view-counter">

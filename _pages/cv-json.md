@@ -13,5 +13,7 @@ redirect_from:
 
 <div class="cv-download-links">
   <a href="{{ base_path }}/files/ChengDai_cv.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="{{ base_path }}/files/ChengDai_JLU_transcript.pdf" class="btn btn--primary">JLU Transcript</a>
+  <a href="{{ base_path }}/files/ChengDai_WHU_transcript.pdf" class="btn btn--primary">WHU Transcript</a>
   <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
 </div>

@@ -32,6 +32,8 @@ redirect_from:
   </p>
   <p class="home-actions">
     <a class="home-button" href="{{ base_path }}/files/ChengDai_cv.pdf">CV</a>
+    <a class="home-button" href="{{ base_path }}/files/ChengDai_JLU_transcript.pdf">JLU Transcript</a>
+    <a class="home-button" href="{{ base_path }}/files/ChengDai_WHU_transcript.pdf">WHU Transcript</a>
     <a class="home-button" href="{{ base_path }}/publications/">Publications</a>
     <a class="home-button" href="https://github.com/dccc2025">GitHub</a>
   </p>
