@@ -282,6 +282,11 @@ span.highlight {
   color: #5b21b6;
   border: 1px solid #ddd6fe;
 }
+.tag-4d {
+  background-color: #ccfbf1;
+  color: #115e59;
+  border: 1px solid #99f6e4;
+}
 
 .logo-plate {
   display: flex;

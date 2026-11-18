@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261005f">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118a">
 
     <meta property="og:title" content="Cheng Dai">
     <meta property="og:description" content="Cheng Dai's homepage.">
@@ -91,6 +91,9 @@
           </tbody></table>
           <div class="news-frame">
           <div class="timeline-box" id="news-box">
+            <p><span class="timeline-date">2026.11</span><span class="timeline-text">Submitted <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">OVOK</a>, a recursive self-improving agentic framework for video-based articulated robot state estimation; CVPR 2027 under review.</span></p>
+            <p><span class="timeline-date">2026.11</span><span class="timeline-text">Submitted <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">GaIR-Agent</a>, an agentic framework for Gaussian inverse rendering; CVPR 2027 under review.</span></p>
+            <p><span class="timeline-date">2026.11</span><span class="timeline-text">Submitted <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">IGGLoop</a>, an instance-grounded framework for feed-forward 4D driving scene reconstruction; CVPR 2027 under review.</span></p>
             <p><span class="timeline-date">2026.11</span><span class="timeline-text"><a href="https://arxiv.org/abs/2611.06910">FrontierPhysics</a> has been released on arXiv, collaborating with <a href="https://artificialanalysis.ai/">Artificial Analysis</a>, <a href="https://x.com/ArtificialAnlys/status/2118426913488425191">Post</a>, and is on <a href="https://x.com/i/trending/2118486932200296639">X trending</a>, which is led by <a href="https://scholar.google.com/citations?user=96J6vbAAAAAJ&amp;hl=zh-CN">Gerbrand Ceder</a> and <a href="https://scholar.google.com/citations?user=ORNi6TwAAAAJ&amp;hl=en">Hartmut Haeffner</a>.</span></p>
             <p><span class="timeline-date">2026.11</span><span class="timeline-text"><a href="https://arxiv.org/abs/2608.02192">T<sup>2</sup>exture</a> has a positive score (7664) in Phase 2; we finished the rebuttal!</span></p>
             <p><span class="timeline-date">2026.09</span><span class="timeline-text">With 71 coauthors, mainly from UC Berkeley, Caltech, Harvard, and Stanford, we submitted <a href="https://openreview.net/forum?id=Q4Iyl2xyt4">FrontierPhysics</a> to ICLR; it was desk-rejected after the September 23 OpenReview incident, when logged-in reviewers and area chairs could see another user's submissions.</span></p>
@@ -128,6 +131,7 @@
                 Wenjun Ke,
                 ...,
                 <strong>Cheng Dai</strong>,
+                ...,
                 <a href="https://scholar.google.com/citations?user=96J6vbAAAAAJ&amp;hl=zh-CN">Gerbrand Ceder</a>,
                 <a href="https://scholar.google.com/citations?user=ORNi6TwAAAAJ&amp;hl=en">Hartmut Haeffner</a>
                 <br>
@@ -233,6 +237,87 @@
                 <p class="work-links">
                   <a href="https://arxiv.org/abs/2605.13664">Paper</a> &nbsp;/&nbsp;
                   <a href="https://github.com/jialelin2007/HAIR">Code</a>
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#ffffd0">
+              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+                <span class="tag tag-agents">Agents</span>
+              </td>
+              <td style="padding:16px;width:88%;vertical-align:middle">
+                <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">
+                  <span class="papertitle">OVOK: A Recursive Self-Improving Agentic Framework for Video-Based Articulated Robot State Estimation</span>
+                </a>
+                <br>
+                <strong>Cheng Dai</strong><sup>*&dagger;</sup>,
+                Renkai Luo<sup>*</sup>,
+                Guanfeng Tang,
+                Siming Li,
+                and <a href="https://air.tsinghua.edu.cn/info/1046/1945.htm">Hao Zhao</a>
+                <br>
+                <span class="paper-status">CVPR 2027 under review</span>
+                <br>
+                <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution; <sup>&dagger;</sup> Project Lead.</span>
+                <p>
+                  OVOK (One Video to Kinetics) is a recursive self-improving agentic framework for recovering articulated robot state from video, a problem that is ill-posed when intrinsics, camera-to-robot poses, and joint angles can explain similar observations. An agentic initializer builds robot-specific OVOK-4k, then a proposer–executor–verifier loop evolves tools and workflows only when the verifier confirms an improvement, and the retained workflow is frozen for inference. The evolved workflow achieves state-of-the-art results on DREAM-V and RoboKeyGen-V.
+                </p>
+                <p class="work-links">
+                  <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">Paper</a>
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#ffffd0">
+              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+                <span class="tag tag-agents">Agents</span>
+              </td>
+              <td style="padding:16px;width:88%;vertical-align:middle">
+                <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">
+                  <span class="papertitle">GaIR-Agent: Gaussian Inverse Rendering via Closed-Loop Reasoning and Physical Refinement</span>
+                </a>
+                <br>
+                Siming Li<sup>*</sup>,
+                Renkai Luo<sup>*</sup>,
+                <strong>Cheng Dai</strong>,
+                Guanfeng Tang,
+                and <a href="https://air.tsinghua.edu.cn/info/1046/1945.htm">Hao Zhao</a>
+                <br>
+                <span class="paper-status">CVPR 2027 under review</span>
+                <br>
+                <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution.</span>
+                <p>
+                  GaIR-Agent is an agentic framework for Gaussian inverse rendering that recovers editable materials and illumination by coupling visual reasoning with physically based optimization. A Scene Analysis Agent, Evaluator, and Planner iteratively choose supervision and fitting strategy, while Emitter-Aware Physical Optimization (EAPO) improves material–lighting separation. On FIPT-Synthetic and NeuSky Synthetic it reaches state-of-the-art relighting and cuts material-target generation time by 85.6% indoors and 90.2% outdoors versus a non-agentic pipeline.
+                </p>
+                <p class="work-links">
+                  <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">Paper</a>
+                </p>
+              </td>
+            </tr>
+
+            <tr bgcolor="#ffffd0">
+              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+                <span class="tag tag-4d">4D Reconstruction</span>
+              </td>
+              <td style="padding:16px;width:88%;vertical-align:middle">
+                <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">
+                  <span class="papertitle">IGGLoop: Instance-Grounded Gaussian Looped Transformer for Feed-Forward 4D Driving Scene Reconstruction</span>
+                </a>
+                <br>
+                Guanfeng Tang<sup>*</sup>,
+                Renkai Luo<sup>*</sup>,
+                <strong>Cheng Dai</strong>,
+                Siming Li,
+                and <a href="https://air.tsinghua.edu.cn/info/1046/1945.htm">Hao Zhao</a>
+                <br>
+                <span class="paper-status">CVPR 2027 under review</span>
+                <br>
+                <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution.</span>
+                <p>
+                  IGGLoop is an instance-grounded framework for feed-forward 4D driving scene reconstruction that unifies instance segmentation, tracking, Gaussian reconstruction, and motion estimation. Instance queries keep identities across frames so Gaussian and motion queries can aggregate complementary observations, while a Looped Transformer refines pose and depth. On Waymo, nuScenes, and Argoverse 2 it is competitive, with a 2.57% PSNR gain over the state-of-the-art pose-free baseline on Waymo, 6.4% of its parameters, and a 3.45× speedup; the recovered Gaussian assets support instance insertion, removal, and repositioning for controllable re-simulation.
+                </p>
+                <p class="work-links">
+                  <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">Paper</a>
                 </p>
               </td>
             </tr>
