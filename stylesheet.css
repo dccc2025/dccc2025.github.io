@@ -310,7 +310,23 @@ span.highlight {
 }
 
 .work-links {
-  margin-top: 6px;
+  margin-top: 4px;
+}
+
+.work-figure {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 6px 0 2px;
+}
+
+.selected-works p {
+  margin: 8px 0 0;
+}
+
+.selected-works .work-links {
+  margin: 4px 0 0;
 }
 
 .news-frame {
@@ -441,7 +457,7 @@ span.highlight {
 
 .paper-status {
   display: inline-block;
-  margin: 4px 0 6px;
+  margin: 2px 0 4px;
   padding: 2px 8px;
   border: 1px solid #e7b85a;
   border-radius: 999px;

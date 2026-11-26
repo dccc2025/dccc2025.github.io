@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118a">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261126a">
 
     <meta property="og:title" content="Cheng Dai">
     <meta property="og:description" content="Cheng Dai's homepage.">
@@ -76,7 +76,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research Interests</h2>
                 <p>
-                  My former research focused on computational imaging, agentic benchmarks, and embodied intelligence. My research is moving this work down the stack, toward <strong>high-performance computing</strong>, <strong>large-language-model inference</strong>, and <strong>world-model</strong> to support reliable <strong>perception</strong>, <strong>reasoning</strong>, and <strong>interaction</strong> in real-world environments.
+                  My former research focused on computational imaging, agentic benchmarks, and embodied intelligence. My research is moving toward <strong>foundational model training</strong>, <strong>large-language-model inference</strong>, and <strong>world models</strong>, to support reliable <strong>perception</strong>, <strong>reasoning</strong>, and <strong>interaction</strong> in real-world environments.
                 </p>
               </td>
             </tr>
@@ -118,12 +118,12 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="selected-works" style="width:100%;border:0px;border-spacing:0px 6px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-agents">Agents</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2611.32185">
                   <span class="papertitle">OVOK: A Recursive Self-Improving Agentic Framework for Video-Based Articulated Robot State Estimation</span>
                 </a>
@@ -137,20 +137,22 @@
                 <span class="paper-status">CVPR 2027 under review</span>
                 <br>
                 <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution; <sup>&dagger;</sup> Project Lead.</span>
+                <img class="work-figure" src="images/projects/ovok_main_figure.jpg" alt="Overview of OVOK" width="1800" height="641">
                 <p>
-                  We propose OVOK (One Video to Kinetics), a recursive self-improving agentic framework for recovering articulated robot state from video. The evolved workflow achieves state-of-the-art results on DREAM-V and RoboKeyGen-V.
+                  OVOK (One Video to Kinetics) is a recursive self-improving agentic framework that recovers articulated robot state from RGB video and reaches state-of-the-art results on DREAM-V and RoboKeyGen-V.
                 </p>
                 <p class="work-links">
-                  <a href="https://arxiv.org/abs/2611.32185">Paper</a>
+                  <a href="https://arxiv.org/abs/2611.32185">Paper</a> /
+                  <a href="https://github.com/dccc2025/ovok_official">Code</a>
                 </p>
               </td>
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-agents">Agents</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">
                   <span class="papertitle">GaIR-Agent: Gaussian Inverse Rendering via Closed-Loop Reasoning and Physical Refinement</span>
                 </a>
@@ -165,7 +167,7 @@
                 <br>
                 <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution.</span>
                 <p>
-                  We propose GaIR-Agent, an agentic framework for Gaussian inverse rendering that recovers editable materials and illumination. On FIPT-Synthetic and NeuSky Synthetic it reaches state-of-the-art relighting and cuts material-target generation time by 85.6% indoors and 90.2% outdoors versus a non-agentic pipeline.
+                  GaIR-Agent is an agentic framework for Gaussian inverse rendering that recovers editable materials and illumination, with state-of-the-art relighting on FIPT-Synthetic and NeuSky Synthetic.
                 </p>
                 <p class="work-links">
                   <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">Paper</a>
@@ -174,10 +176,10 @@
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-4d">4D Recon</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">
                   <span class="papertitle">IGGLoop: Instance-Grounded Gaussian Looped Transformer for Feed-Forward 4D Driving Scene Reconstruction</span>
                 </a>
@@ -192,7 +194,7 @@
                 <br>
                 <span style="font-size:13px;color:#666;"><sup>*</sup> Equal contribution.</span>
                 <p>
-                  We propose IGGLoop, an instance-grounded framework for feed-forward 4D driving scene reconstruction that unifies instance segmentation, tracking, Gaussian reconstruction, and motion estimation. On Waymo it gains 2.57% PSNR over the state-of-the-art pose-free baseline, with 6.4% of its parameters and a 3.45× speedup, and the recovered Gaussian assets support instance insertion, removal, and repositioning.
+                  IGGLoop unifies instance segmentation, tracking, Gaussian reconstruction, and motion estimation for feed-forward 4D driving scenes, and is competitive on Waymo, nuScenes, and Argoverse 2.
                 </p>
                 <p class="work-links">
                   <a href="https://dccc2025.github.io/files/will_be_released_on_arxiv_few_days_later/">Paper</a>
@@ -201,37 +203,41 @@
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-agents">Agents</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://arxiv.org/html/2611.06910">
                   <span class="papertitle">FrontierPhysics: Evaluating Agents for End-to-End Physics Research</span>
                 </a>
                 <br>
                 Bingran You,
-                Wenjun Ke,
                 ...,
                 <strong>Cheng Dai</strong>,
                 ...,
                 <a href="https://scholar.google.com/citations?user=96J6vbAAAAAJ&amp;hl=zh-CN">Gerbrand Ceder</a>,
-                <a href="https://scholar.google.com/citations?user=ORNi6TwAAAAJ&amp;hl=en">Hartmut Haeffner</a>
+                and <a href="https://scholar.google.com/citations?user=ORNi6TwAAAAJ&amp;hl=en">Hartmut Haeffner</a>
                 <br>
-                <span class="paper-status">Nature under submit</span>
+                <span style="font-size:13px;color:#666;">108 authors.</span>
+                <br>
+                <span class="paper-status">Technical report</span>
+                <img class="work-figure" src="images/projects/frontierphysics_aa.jpg" alt="Artificial Analysis FrontierPhysics scores and score versus cost" width="1200" height="972">
                 <p>
-                  FrontierPhysics is an end-to-end benchmark of 56 physicist-authored research tasks across nine theoretical, computational, and experimental domains. Agents must review the literature, carry out the research, and write a manuscript, scored for correctness and publishable quality. Across 22 models in 26 configurations, none passed more than 46 of 168 rollouts; the main gaps were rigorous reasoning and expert intuition, not physics knowledge or execution.
+                  FrontierPhysics is an end-to-end benchmark of 56 physicist-authored research tasks and has been integrated with Artificial Analysis. Across 22 models, none passed more than 46 of 168 rollouts.
                 </p>
                 <p class="work-links">
                   <a href="https://arxiv.org/html/2611.06910">Paper</a> /
-                  <a href="https://huggingface.co/papers/2611.06910">Huggingface</a>
+                  <a href="https://huggingface.co/papers/2611.06910">Huggingface</a> /
+                  <a href="https://artificialanalysis.ai/evaluations/frontierphysics">Artificial Analysis</a> /
+                  <a href="https://x.com/ArtificialAnlys/status/2125691597602058284">Post</a>
                 </p>
               </td>
             </tr>
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-imaging">Imaging</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2608.02192">
                   <span class="papertitle">T<sup>2</sup>exture: Sparsely Perturbed Thermal-to-Texture Imaging</span>
                 </a>
@@ -259,10 +265,10 @@
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-data">Dataset</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2606.03806">
                   <span class="papertitle">TeX-1500: A Paired Real-World LWIR Hyperspectral Dataset and Benchmark</span>
                 </a>
@@ -292,10 +298,10 @@
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:20px 0 16px 16px;width:12%;vertical-align:top;text-align:left">
+              <td style="padding:12px 0 10px 12px;width:12%;vertical-align:top;text-align:left">
                 <span class="tag tag-restore">Restore</span>
               </td>
-              <td style="padding:16px;width:88%;vertical-align:middle">
+              <td style="padding:12px 14px;width:88%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2605.13664">
                   <span class="papertitle">HADAR-Based Thermal Infrared Hyperspectral Image Restoration</span>
                 </a>
